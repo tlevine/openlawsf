@@ -447,5 +447,5 @@ html.make_links_absolute('http://www.amlegal.com/nxt/gateway.dll?f=id$id=San%20F
 
 def test_sec_515_01():
     observed = lib.section_text(html, 'JD_515.01')
-    expected = ('Sec. 515.01.', 'Hotel Tax Allocations.', )
-    n.assert_tuple_equal(observed[-2], expected)
+    n.assert_in('All monies collected pursuant to the tax imposed by', observed.text_content())
+    n.assert_in('(Added by Ord. 300-97, App. 7/25/97; amended by Ord. 301-97, App. 7/25/97; Ord. 302-97, App. 7/25/97; Ord. 360-97, App. 9/5/97; Ord. 2-98, App. 1/16/98; Ord. 254-98, App. 7/31/98; Ord. 183-01, File No. 011174, App. 8/17/2001)', observed.cssselect('p.History')[0].text_content())
