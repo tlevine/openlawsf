@@ -321,6 +321,223 @@ For further information regarding the official version of any of this Code of Or
 html.make_links_absolute('http://www.amlegal.com/nxt/gateway.dll?f=id$id=San%20Francisco%20Business%20and%20Tax%20Regulations%20Code%3Ar%3A2$cid=california$t=document-frame.htm$an=JD_Business$3.0#JD_Business')
 observed = lib.articles(html)
 
+
+html2 = fromstring('''
+<div id="ref_id" style="display: none">California/San Francisco Business and Tax Regulations Code/ARTICLE 23: VEHICLE REGISTRATION FEE EXPENDITURE PLAN</div>
+<link rel="stylesheet" type="text/css" href="/nxt/gateway.dll/California/business/article23vehicleregistrationfeeexpenditu?f=stylesheets$fn=ALP_style.css$3.0" />
+
+<style>
+	@media screen {
+		div.new_window {
+			text-align: right;
+		}
+	}
+	@media print {
+		div.new_window, div#refbox {
+			display: none;
+		}
+	}
+	a.new_window {
+		font-size: 8pt;
+		font-family: Arial;
+		color: #6D779E;
+	}
+	body {
+		margin-top: 0;
+	}
+	.showurl {
+		text-decoration: none;
+	}
+</style>
+
+<script type="text/javascript">
+	var ref = document.getElementById("ref_id").innerHTML;
+
+	function openWindow()
+	{
+		var win_name = "window" + new Date().getTime();
+//		var new_win = window.open("/nxt/gateway.dll/California/business/article23vehicleregistrationfeeexpenditu?f=templates$fn=document-frameset.htm$3.0", win_name, "resizable=yes,scrollbars=yes,top=0,left=0,width=" + parseInt(screen.availWidth * .75) + ",height=" + parseInt(screen.availHeight *.75));
+		var new_win = window.open("/nxt/gateway.dll/California/business/article23vehicleregistrationfeeexpenditu?f=templates$fn=default.htm$3.0", win_name, "resizable=yes,scrollbars=yes,top=0,left=0,width=" + parseInt(screen.availWidth * .75) + ",height=" + parseInt(screen.availHeight *.75));
+	}
+</script>
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD W3 HTML//EN">
+<HTML>
+<HEAD>
+<script language="JavaScript">
+  var nextyear = new Date();
+  nextyear.setFullYear(nextyear.getFullYear() + 1);
+  var PathExp = "; path=/; expires=" + nextyear.toGMTString();
+  var Off = document.cookie.indexOf("name=RL:0");
+  var On = document.cookie.indexOf("name=RL:1");
+
+  document.writeln('<style type="text/css">');
+  if (Off != -1) {
+    //if (navigator.appName == "Netscape") {
+	  //document.classes.refline.all.display = "normal";
+	//} else {
+	  document.writeln('td.refline {display:normal}');
+	//}
+  } else {
+    if (On != -1) {
+      //if (navigator.appName == "Netscape") {
+		//document.classes.refline.all.display = "normal";
+      //} else {
+	    document.writeln('td.refline {display:normal}');
+      //}
+    } else {
+      document.cookie = "name=RL:0" + PathExp;
+      //if (navigator.appName == "Netscape") {
+		//document.classes.refline.all.display = "normal";
+	  //} else {
+	    document.writeln('td.refline {display:normal}');
+	  //}
+    }
+  }
+  document.writeln('</style>');
+
+
+  function switchit() {
+    if (navigator.appName == "Netscape") {
+	  if (document.forms.ChangeBox.ShowStyleBox.checked == 1) {
+	    document.cookie = "name=RL:1" + PathExp;
+      } else {
+	    document.cookie = "name=RL:0" + PathExp;
+	  }
+    } else {
+        if (ChangeBox.ShowStyleBox.checked == 1) {
+          document.cookie = "name=RL:1" + PathExp;
+        } else {
+          document.cookie = "name=RL:0" + PathExp;
+        }
+    }
+	location.reload();
+  }
+
+</script>
+
+	<LINK rel="stylesheet" href="/nxt/gateway.dll?f=id$id=business.css$t=document-frame.htm$3.0$p=" type="text/css">
+<script type="text/javascript" src="/alp_templates/url.js"></script>
+</HEAD>
+<BODY bgColor=#ffffff>
+<form style="margin-bottom:1px;margin-bottom:1px" name="ChangeBox">
+<table border="1" width="100%" cellspacing="0" cellpadding="0" style="background-color: #ffffff">
+<tr><td>
+<p style="margin-bottom:1px;margin-bottom:1px;text-align:center"><span style="font-family:Arial;font-size:8pt"> San Francisco Business and Tax Regulations Code</span></p>
+</td></tr>
+<tr><td class="refline" bgcolor="#d3d3d3">
+<p class="refline" style="margin-left:1px;"><a href="/nxt/gateway.dll?f=id$id=San%20Francisco%20Business%20and%20Tax%20Regulations%20Code%3Ar%3Acc9$t=document-frame.htm$3.0$p=" class="refline">ARTICLE 23: VEHICLE REGISTRATION FEE EXPENDITURE PLAN</a></p>
+</td></tr>
+</table>
+</form>
+<META http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<A NAME='JD_Article23'></A>
+<H1 CLASS='Article'><a href="javascript:void(0)" onclick="showUrl('')"><img src="/alp_templates/images/ui-bookmark.gif" width="16" height="16" alt="Bookmark" border="0"></a><span href="javascript:void(0)" onclick="showUrl('')" style="cursor: pointer">ARTICLE 23:<BR />
+VEHICLE REGISTRATION FEE EXPENDITURE PLAN</span></H1>
+
+<TABLE CELLSPACING=0 WIDTH=672 CELLPADDING=4>
+<TR><TD WIDTH=96 VALIGN=TOP><P CLASS='ChapAn'>
+<A HREF='/nxt/gateway.dll?f=id$id=San%20Francisco%20Business%20and%20Tax%20Regulations%20Code%3Ar%3Acc9$cid=california$t=document-frame.htm$an=JD_2301$3.0#JD_2301'>Sec. 2301.</A></P>
+</TD><TD WIDTH=576 VALIGN=TOP><P CLASS='ChapAn'>Title.</P>
+</TD></TR>
+<TR><TD WIDTH=96 VALIGN=TOP><P CLASS='ChapAn'>
+<A HREF='/nxt/gateway.dll?f=id$id=San%20Francisco%20Business%20and%20Tax%20Regulations%20Code%3Ar%3Acc9$cid=california$t=document-frame.htm$an=JD_2302$3.0#JD_2302'>Sec. 2302.</A></P>
+</TD><TD WIDTH=576 VALIGN=TOP><P CLASS='ChapAn'>Definitions.</P>
+</TD></TR>
+<TR><TD WIDTH=96 VALIGN=TOP><P CLASS='ChapAn'>
+<A HREF='/nxt/gateway.dll?f=id$id=San%20Francisco%20Business%20and%20Tax%20Regulations%20Code%3Ar%3Acc9$cid=california$t=document-frame.htm$an=JD_2303$3.0#JD_2303'>Sec. 2303.</A></P>
+</TD><TD WIDTH=576 VALIGN=TOP><P CLASS='ChapAn'>Purpose.</P>
+</TD></TR>
+<TR><TD WIDTH=96 VALIGN=TOP><P CLASS='ChapAn'>
+<A HREF='/nxt/gateway.dll?f=id$id=San%20Francisco%20Business%20and%20Tax%20Regulations%20Code%3Ar%3Acc9$cid=california$t=document-frame.htm$an=JD_2304$3.0#JD_2304'>Sec. 2304.</A></P>
+</TD><TD WIDTH=576 VALIGN=TOP><P CLASS='ChapAn'>Effective Date.</P>
+</TD></TR>
+<TR><TD WIDTH=96 VALIGN=TOP><P CLASS='ChapAn'>
+<A HREF='/nxt/gateway.dll?f=id$id=San%20Francisco%20Business%20and%20Tax%20Regulations%20Code%3Ar%3Acc9$cid=california$t=document-frame.htm$an=JD_2305$3.0#JD_2305'>Sec. 2305.</A></P>
+</TD><TD WIDTH=576 VALIGN=TOP><P CLASS='ChapAn'>Increase of $10 in the Annual Motor Vehicle Registration Fee.</P>
+</TD></TR>
+<TR><TD WIDTH=96 VALIGN=TOP><P CLASS='ChapAn'>
+<A HREF='/nxt/gateway.dll?f=id$id=San%20Francisco%20Business%20and%20Tax%20Regulations%20Code%3Ar%3Acc9$cid=california$t=document-frame.htm$an=JD_2306$3.0#JD_2306'>Sec. 2306.</A></P>
+</TD><TD WIDTH=576 VALIGN=TOP><P CLASS='ChapAn'>Responsibilities and Powers of the Authority.</P>
+</TD></TR>
+<TR><TD WIDTH=96 VALIGN=TOP><P CLASS='ChapAn'>
+<A HREF='/nxt/gateway.dll?f=id$id=San%20Francisco%20Business%20and%20Tax%20Regulations%20Code%3Ar%3Acc9$cid=california$t=document-frame.htm$an=JD_2307$3.0#JD_2307'>Sec. 2307.</A></P>
+</TD><TD WIDTH=576 VALIGN=TOP><P CLASS='ChapAn'>Contract with Department of Motor Vehicles.</P>
+</TD></TR>
+<TR><TD WIDTH=96 VALIGN=TOP><P CLASS='ChapAn'>
+<A HREF='/nxt/gateway.dll?f=id$id=San%20Francisco%20Business%20and%20Tax%20Regulations%20Code%3Ar%3Acc9$cid=california$t=document-frame.htm$an=JD_2308$3.0#JD_2308'>Sec. 2308.</A></P>
+</TD><TD WIDTH=576 VALIGN=TOP><P CLASS='ChapAn'>Use of Proceeds.</P>
+</TD></TR>
+<TR><TD WIDTH=96 VALIGN=TOP><P CLASS='ChapAn'>
+<A HREF='/nxt/gateway.dll?f=id$id=San%20Francisco%20Business%20and%20Tax%20Regulations%20Code%3Ar%3Acc9$cid=california$t=document-frame.htm$an=JD_2309$3.0#JD_2309'>Sec. 2309.</A></P>
+</TD><TD WIDTH=576 VALIGN=TOP><P CLASS='ChapAn'>Severability.</P>
+</TD></TR></TABLE>
+<A NAME='JD_2301'></A>
+<a name="LPTOC1"></a><H3 CLASS='Section'><a href="javascript:void(0)" onclick="showUrl('JD_2301')"><img src="/alp_templates/images/ui-bookmark.gif" width="16" height="16" alt="Bookmark" border="0"></a><span href="javascript:void(0)" onclick="showUrl('JD_2301')" style="cursor: pointer">SEC. 2301.  TITLE.</span></H3>
+<P>     This ordinance shall be known as the "Vehicle Registration Fee Ordinance." </P>
+<P CLASS='History'>(Added by Prop. AA, App. 11/2/2010)</P>
+<A NAME='JD_2302'></A>
+<a name="LPTOC2"></a><H3 CLASS='Section'><a href="javascript:void(0)" onclick="showUrl('JD_2302')"><img src="/alp_templates/images/ui-bookmark.gif" width="16" height="16" alt="Bookmark" border="0"></a><span href="javascript:void(0)" onclick="showUrl('JD_2302')" style="cursor: pointer">SEC. 2302.  DEFINITIONS.</span></H3>
+<P>     For the purpose of this Vehicle Registration Fee Ordinance, the following words shall have the meanings set forth below. </P>
+<P>     (a)     "Authority." The San Francisco County Transportation Authority.</P>
+<P>     (b)     "Board." The Authority Board of Commissioners.</P>
+<P>     (c)     "Expenditure Plan." The "SB83 Additional Vehicle Registration Fee Expenditure Plan," approved by the Board on June 29, 2010, to set the transportation projects and programs funded over the next 30 years with the revenues of the fee increase, as well as other allowable costs on which the Authority may spend the proceeds of the $10 vehicle registration fee increase authorized by Section
+<A HREF='/nxt/gateway.dll?f=id$id=San%20Francisco%20Business%20and%20Tax%20Regulations%20Code%3Ar%3Acc9$cid=california$t=document-frame.htm$an=JD_2305$3.0#JD_2305'>2305</A>. The Expenditure Plan specifies eligibility and other conditions and criteria under which the proceeds of the fee increase are available, and provides for the adoption of future Expenditure Plan updates. </P>
+<P CLASS='History'>(Added by Prop. AA, App. 11/2/2010)</P>
+<A NAME='JD_2303'></A>
+<a name="LPTOC3"></a><H3 CLASS='Section'><a href="javascript:void(0)" onclick="showUrl('JD_2303')"><img src="/alp_templates/images/ui-bookmark.gif" width="16" height="16" alt="Bookmark" border="0"></a><span href="javascript:void(0)" onclick="showUrl('JD_2303')" style="cursor: pointer">SEC. 2303.  PURPOSE.</span></H3>
+<P>     The City and County of San Francisco has very significant unfunded transportation needs and this $10 vehicle registration fee increase would provide a stable source of funding to meet some of those needs. The fee is expected to generate approximately $5 million annually that the Authority would use to fund projects and programs under the Expenditure Plan that mitigate congestion and pollution caused by motor vehicles in San Francisco. These projects and programs could include repairing local streets and roads, improving Muni's reliability, pedestrian safety improvements, smart traffic signal technology to prioritize transit and manage traffic incidents, and programs that encourage people to use more sustainable forms of transportation, e.g. transit, bicycle, carpool or on foot. All of the projects and programs must have a relationship or benefit to the persons paying the fee. The Expenditure Plan contains guiding principles intended to, among other objectives, focus on funding smaller, high-impact projects that will quickly provide tangible benefits; provide a fair geographic distribution that takes into account the various needs of San Francisco's neighborhoods; and ensure accountability and transparency in programming and delivery. </P>
+<P CLASS='History'>(Added by Prop. AA, App. 11/2/2010)</P>
+<A NAME='JD_2304'></A>
+<a name="LPTOC4"></a><H3 CLASS='Section'><a href="javascript:void(0)" onclick="showUrl('JD_2304')"><img src="/alp_templates/images/ui-bookmark.gif" width="16" height="16" alt="Bookmark" border="0"></a><span href="javascript:void(0)" onclick="showUrl('JD_2304')" style="cursor: pointer">SEC. 2304.  EFFECTIVE DATE.</span></H3>
+<P>     The Vehicle Registration Fee Ordinance shall be effective at the close of the polls in the City and County of San Francisco on the day of the election scheduled for November 2, 2010. </P>
+<P CLASS='History'>(Added by Prop. AA, App. 11/2/2010)</P>
+<A NAME='JD_2305'></A>
+<a name="LPTOC5"></a><H3 CLASS='Section'><a href="javascript:void(0)" onclick="showUrl('JD_2305')"><img src="/alp_templates/images/ui-bookmark.gif" width="16" height="16" alt="Bookmark" border="0"></a><span href="javascript:void(0)" onclick="showUrl('JD_2305')" style="cursor: pointer">SEC. 2305.  INCREASE OF $10 IN THE ANNUAL MOTOR VEHICLE REGISTRATION FEE.</span></H3>
+<P>     Beginning six months after the Effective Date, the motor vehicle registration fee for all motor vehicles registered in the City and County of San Francisco is increased by $10 each year, for each original vehicle registration and each vehicle registration renewal. </P>
+<P CLASS='History'>(Added by Prop. AA, App. 11/2/2010)</P>
+<A NAME='JD_2306'></A>
+<a name="LPTOC6"></a><H3 CLASS='Section'><a href="javascript:void(0)" onclick="showUrl('JD_2306')"><img src="/alp_templates/images/ui-bookmark.gif" width="16" height="16" alt="Bookmark" border="0"></a><span href="javascript:void(0)" onclick="showUrl('JD_2306')" style="cursor: pointer">SEC. 2306.  RESPONSIBILITIES AND POWERS OF THE AUTHORITY.</span></H3>
+<P>     The Authority shall have all of the powers set forth in California Government Code Section 65089.20, all of the powers set forth in the Expenditure Plan, and all powers incidental or necessary to imposing and collecting the fee increase authorized under Section
+<A HREF='/nxt/gateway.dll?f=id$id=San%20Francisco%20Business%20and%20Tax%20Regulations%20Code%3Ar%3Acc9$cid=california$t=document-frame.htm$an=JD_2305$3.0#JD_2305'>2305</A>, administering the fee proceeds, the Expenditure Plan, and the projects and programs under that Expenditure Plan, and delivering the transportation improvements in the Expenditure Plan. </P>
+<P CLASS='History'>(Added by Prop. AA, App. 11/2/2010)</P>
+<A NAME='JD_2307'></A>
+<a name="LPTOC7"></a><H3 CLASS='Section'><a href="javascript:void(0)" onclick="showUrl('JD_2307')"><img src="/alp_templates/images/ui-bookmark.gif" width="16" height="16" alt="Bookmark" border="0"></a><span href="javascript:void(0)" onclick="showUrl('JD_2307')" style="cursor: pointer">SEC. 2307.  CONTRACT WITH DEPARTMENT OF MOTOR VEHICLES.</span></H3>
+<P>     Consistent with California Vehicle Code Section 9250.4, the Authority shall request and contract with the California Department of Motor Vehicles for the Department of Motor Vehicles to collect and distribute to the Authority the fee imposed under Section
+<A HREF='/nxt/gateway.dll?f=id$id=San%20Francisco%20Business%20and%20Tax%20Regulations%20Code%3Ar%3Acc9$cid=california$t=document-frame.htm$an=JD_2305$3.0#JD_2305'>2305</A>, upon the original registration or renewal of registration of all motor vehicles registered in the City and County of San Francisco. </P>
+<P CLASS='History'>(Added by Prop. AA, App. 11/2/2010)</P>
+<A NAME='JD_2308'></A>
+<a name="LPTOC8"></a><H3 CLASS='Section'><a href="javascript:void(0)" onclick="showUrl('JD_2308')"><img src="/alp_templates/images/ui-bookmark.gif" width="16" height="16" alt="Bookmark" border="0"></a><span href="javascript:void(0)" onclick="showUrl('JD_2308')" style="cursor: pointer">SEC. 2308.  USE OF PROCEEDS.</span></H3>
+<P>     (a)     The Authority shall use the proceeds of the fees under Section
+<A HREF='/nxt/gateway.dll?f=id$id=San%20Francisco%20Business%20and%20Tax%20Regulations%20Code%3Ar%3Acc9$cid=california$t=document-frame.htm$an=JD_2305$3.0#JD_2305'>2305</A> solely for the projects, programs and purposes set forth in the Expenditure Plan. Pursuant to California Government Code section 65089.20 and as specified in the Expenditure Plan, the Authority shall use not more than five percent of the fee proceeds for administrative costs associated with the programs and projects, including amending the Expenditure Plan. </P>
+<P CLASS='History'>(Added by Prop. AA, App. 11/2/2010)</P>
+<A NAME='JD_2309'></A>
+<a name="LPTOC9"></a><H3 CLASS='Section'><a href="javascript:void(0)" onclick="showUrl('JD_2309')"><img src="/alp_templates/images/ui-bookmark.gif" width="16" height="16" alt="Bookmark" border="0"></a><span href="javascript:void(0)" onclick="showUrl('JD_2309')" style="cursor: pointer">SEC. 2309.  SEVERABILITY.</span></H3>
+<P>     If any of the provisions of this ordinance or the application of those provisions to persons or circumstances shall be held invalid, the remainder of those sections or the application of those provisions to persons or circumstances other than those to which it is held invalid shall not be affected thereby. </P>
+<P CLASS='History'>(Added by Prop. AA, App. 11/2/2010)</P>
+
+
+<div style="text-align: left; color: #6D779E; font-family: Arial, Helvetica, sans-serif; font-size: 8pt">
+<b><u>Disclaimer:</u></b><br>
+
+This Code of Ordinances and/or any other documents that appear on this site may not reflect the most current legislation adopted by the Municipality.  American Legal Publishing Corporation provides these documents for informational purposes only. These documents should not be relied upon as the definitive authority for local legislation. Additionally, the formatting and pagination of the posted documents varies from the formatting and pagination of the official copy.  The official printed copy of a Code of Ordinances should be consulted prior to any action being taken.<br><br>
+
+For further information regarding the official version of any of this Code of Ordinances or other documents posted on this site, please contact the Municipality directly or contact American Legal Publishing toll-free at 800-445-5588.<br><br>
+
+<center>
+&copy; 2013 American Legal Publishing Corporation<br>
+<a href="mailto:techsupport@amlegal.com">techsupport@amlegal.com</a><br>
+1.800.445.5588.<br>
+</center>
+</div>
+</BODY>
+</HTML>
+<form name="LPHitCountForm">
+<input type="hidden" name="LPHitCount" value="0">
+</form>
+''')
+
 def test_count():
     'The list of articles should have the correct length.'
     expected = 23
@@ -331,3 +548,7 @@ def test_data_2():
     title = 'LICENSE FEES'
     href = 'http://www.amlegal.com/nxt/gateway.dll?f=id$id=San%20Francisco%20Business%20and%20Tax%20Regulations%20Code%3Ar%3A198$cid=california$t=document-frame.htm$an=JD_Article2$3.0#JD_Article2'
     n.assert_tuple_equal(observed[1], (number, title, href))
+
+def test_article23():
+    html2.make_links_absolute('http://www.amlegal.com/nxt/gateway.dll\?f\=id\$id\=San%20Francisco%20Business%20and%20Tax%20Regulations%20Code%3Ar%3Acc9\$cid\=california\$t\=document-frame.htm\$an\=JD_Article23\$3.0#JD_Article23')
+    observed2 = lib.articles(html2)

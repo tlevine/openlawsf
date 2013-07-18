@@ -30,13 +30,14 @@ def get(sess, url, cachedir = 'downloads'):
     html.make_links_absolute(url)
     return html
 
-# Set the cookie.
-s = session()
-s.get('http://www.amlegal.com/nxt/gateway.dll?f=templates&fn=default.htm&vid=amlegal:sanfrancisco_ca')
+def download():
+    'Download all of the files so we have a local cache.'
+    # Set the cookie.
+    s = session()
+    s.get('http://www.amlegal.com/nxt/gateway.dll?f=templates&fn=default.htm&vid=amlegal:sanfrancisco_ca')
 
-# Get the list of codes.
-html = get(s, 'http://www.amlegal.com/nxt/gateway.dll/California/sfbuilding/cityandcountyofsanfranciscobuildingindus?f=templates$fn=document-frame.htm$3.0')
-for name, url in lib.codes(html):
-    get(s, url)
-
-html = get(s, 'http://www.amlegal.com/nxt/gateway.dll?f=id$id=San%20Francisco%20Business%20and%20Tax%20Regulations%20Code%3Ar%3A595$cid=california$t=document-frame.htm$an=JD_Article7$3.0#JD_Article7')
+    # Get the list of codes.
+    html = get(s, 'http://www.amlegal.com/nxt/gateway.dll/California/sfbuilding/cityandcountyofsanfranciscobuildingindus?f=templates$fn=document-frame.htm$3.0')
+    for _, code_url in lib.codes(html):
+        for _, _, article_url in lib.articles(get(s, code_url)):
+            get(s, article_url)
