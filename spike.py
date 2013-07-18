@@ -39,4 +39,4 @@ html = get(s, 'http://www.amlegal.com/nxt/gateway.dll/California/sfbuilding/city
 for name, url in lib.codes(html):
     get(s, url)
 
-get(s, 'http://www.amlegal.com/nxt/gateway.dll?f=id$id=San%20Francisco%20Business%20and%20Tax%20Regulations%20Code%3Ar%3A595$cid=california$t=document-frame.htm$an=JD_Article7$3.0#JD_Article7')
+html = get(s, 'http://www.amlegal.com/nxt/gateway.dll?f=id$id=San%20Francisco%20Business%20and%20Tax%20Regulations%20Code%3Ar%3A595$cid=california$t=document-frame.htm$an=JD_Article7$3.0#JD_Article7')

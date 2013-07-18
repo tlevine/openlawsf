@@ -26,11 +26,10 @@ def sections(html):
 
 def section_text(html, section_hash):
     text = '<section>'
-    elements = html.xpath('//a[@name="JD_515.01"]/following-sibling::p[position()=1]/following-sibling::*')
+    elements = html.xpath('//a[@name="JD_515.01"]/following-sibling::h3/following-sibling::*')
     for e in elements:
+        text += tostring(e)
         if e.tag == 'a' and len(e.xpath('@name')) > 0:
-            text += tostring(e)
             break
     text += '</section>'
-    print text
     return text
