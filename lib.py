@@ -10,13 +10,12 @@ def articles(html):
     trs = html.xpath('//tr[descendant::p[@class="ChapAn"]]')
     if len(trs) > 0 and 'Article' in trs[0].xpath('td[position()=1]')[0].text_content():
         del trs[0]
-    print trs
     def _features(tr):
         number = tr.xpath('td[position()=1]/p')[0].text_content().strip()
         href = tr.xpath('td[position()=1]/descendant::a/@href')[0]
         title = tr.xpath('td[position()=2]/p')[0].text_content().strip()
         return (number, title, href)
-    return map(_features, trs)
+    return map(_features, filter(lambda tr: len(tr.cssselect('a')) > 1, trs))
 
 def sections(html):
     trs = html.xpath('//tr[descendant::p[@class="ChapAn"]]')
