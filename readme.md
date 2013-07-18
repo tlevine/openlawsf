@@ -11,7 +11,7 @@ It could go into a site like this.
 But for now, it's just gonna look like [OpenLaw DC](http://dccode.org/).
 
 
-## Schema
+## Schema of the DC code browser
 I'm fitting this into OpenLaw DC's schema. It's not documented,
 so I document it here.
 
@@ -49,31 +49,19 @@ followed by the heading.
     }
 
 I have a feeling that a DC "section" is equivalent to an
-SF "article".
+SF "section" and that a DC "title" is equivalent to a SF "code".
 
 ### `sids.json`
-`sids.json` is a list of subsections; similar to the lists in the index,
-these lists contain subsections that have two element lists of the
-subsection number followed by the heading. These subsections are
-equivalent San Francisco's "sections".
+`sids.json` to be a list of most of the sections in `index.json`.
+All sections in `index.json` are contained within `sids.json`, but
+not vice-versa.
 
-    [ ["1-1001.01", "Election of electors."],
-      ["1-1001.02", "Definitions."],
-      ["1-1001.03", "Board of Elections--Created; composition; term of office; vacancies; reappointment; designation of Chairman."],
-      ["1-1001.04", "Board of Elections--Qualifications; prohibited activities; compensation; removal; time for filling vacancy."],
-      ["1-1001.05", "Board of Elections--Duties."],
-      ...
-      ["1-101", "Territorial area."],
-      ["1-1011.01", "Election wards."],
-      ["1-102", "District created body corporate for municipal purposes."],
-      ["1-1021.01", "Timeliness of action."],
-      ["1-1021.02", "Issuance of rules and regulations."],
-      ...
-    ]
-
-Note that `sids.json` includes both sections/articles and subsections/sections
-(Slashes are for DC/SF). I guess the  section (SF) in `sids.json` is just the
-introduction.
+```python
+sids = json.load(open('schema/sids.json'))
+index = json.load(open('schema/index.json'))
+print set(map(tuple, sids)).difference(set(map(tuple, index['sections'])))
+print set(map(tuple, index['sections'])).difference(set(map(tuple, sids)))
+```
 
 ### `:section.json`
 This file is named after one of the sections in `sids.json`, and it looks like this.
@@ -103,3 +91,6 @@ This file is named after one of the sections in `sids.json`, and it looks like t
     }
 
 I haven't yet figured out what all of that means.
+
+## Changes in Schema for SF
+In DC, the hierarchy is title, section, 
