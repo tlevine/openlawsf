@@ -1,3 +1,5 @@
+from lxml.html import tostring
+
 def codes(html):
     'Extract the code links.'
     codeList = html.cssselect('p.CodeList > a')
@@ -21,3 +23,14 @@ def sections(html):
         title = tr.xpath('td[position()=2]/p/text()')[0]
         return (number, title, href.split('#')[1])
     return map(_features, trs)
+
+def section_text(html, section_hash):
+    text = '<section>'
+    elements = html.xpath('//a[@name="JD_515.01"]/following-sibling::p[position()=1]/following-sibling::*')
+    for e in elements:
+        if e.tag == 'a' and len(e.xpath('@name')) > 0:
+            text += tostring(e)
+            break
+    text += '</section>'
+    print text
+    return text
