@@ -11,7 +11,7 @@ def articles(html):
     def _features(tr):
         number = tr.xpath('td[position()=1]/p')[0].text_content().strip()
         href = tr.xpath('td[position()=1]/p/a/@href')[0]
-        title = tr.xpath('td[position()=2]/p/a/text()')[0]
+        title = tr.xpath('td[position()=2]/p')[0].text_content().strip()
         return (number, title, href)
     return map(_features, trs)
 
