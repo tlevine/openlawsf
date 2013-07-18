@@ -448,3 +448,8 @@ observed = lib.sections(html)
 
 def test_count():
     n.assert_equal(len(observed), 15)
+
+def test_sec_515_01():
+    expected = ('Sec. 515.01.', 'Hotel Tax Allocations.', 'JD_515.01')
+    n.assert_tuple_equal(observed[-2], expected)
+
