@@ -3,6 +3,8 @@ import os, re
 from requests import session
 from lxml.html import fromstring
 
+import lib
+
 def get(sess, url, cachedir = 'downloads'):
     'Download a web file, or load the version from disk.'
     tmp1 = url.replace('http://', '')
@@ -24,9 +26,15 @@ def get(sess, url, cachedir = 'downloads'):
        handle.write(r.text.encode('utf-8'))
        handle.close()
 
-    print local_file
-    return fromstring(open(local_file).read().decode('utf-8'))
+    html = fromstring(open(local_file).read().decode('utf-8'))
+    html.make_links_absolute(url)
+    return html
 
+# Set the cookie.
 s = session()
-s.get('http://www.amlegal.com/nxt/gateway.dll?f=templates&fn=default.htm&vid=amlegal:sanfrancisco_ca') # set the cookie
+s.get('http://www.amlegal.com/nxt/gateway.dll?f=templates&fn=default.htm&vid=amlegal:sanfrancisco_ca')
+
+# Get the list of codes.
 html = get(s, 'http://www.amlegal.com/nxt/gateway.dll/California/sfbuilding/cityandcountyofsanfranciscobuildingindus?f=templates$fn=document-frame.htm$3.0')
+for name, url in lib.codes(html):
+    get(s, url)
