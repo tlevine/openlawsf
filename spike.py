@@ -1,7 +1,7 @@
 #!/usr/bin/env python2
 import os, re
 from requests import session
-
+from lxml.html import fromstring
 
 def get(sess, url, cachedir = 'downloads'):
     'Download a web file, or load the version from disk.'
@@ -22,8 +22,11 @@ def get(sess, url, cachedir = 'downloads'):
        r = sess.get(url)
        handle = open(local_file, 'w')
        handle.write(r.text.encode('utf-8'))
+       handle.close()
 
-    return open(local_file).read().decode('utf-8')
+    print local_file
+    return fromstring(open(local_file).read().decode('utf-8'))
 
 s = session()
-get(s, 'http://www.amlegal.com/nxt/gateway.dll?f=templates&fn=default.htm&vid=amlegal:sanfrancisco_ca')
+s.get('http://www.amlegal.com/nxt/gateway.dll?f=templates&fn=default.htm&vid=amlegal:sanfrancisco_ca') # set the cookie
+html = get(s, 'http://www.amlegal.com/nxt/gateway.dll/California/sfbuilding/cityandcountyofsanfranciscobuildingindus?f=templates$fn=document-frame.htm$3.0')
