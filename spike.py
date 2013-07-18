@@ -38,3 +38,5 @@ s.get('http://www.amlegal.com/nxt/gateway.dll?f=templates&fn=default.htm&vid=aml
 html = get(s, 'http://www.amlegal.com/nxt/gateway.dll/California/sfbuilding/cityandcountyofsanfranciscobuildingindus?f=templates$fn=document-frame.htm$3.0')
 for name, url in lib.codes(html):
     get(s, url)
+
+get(s, 'http://www.amlegal.com/nxt/gateway.dll?f=id$id=San%20Francisco%20Business%20and%20Tax%20Regulations%20Code%3Ar%3A595$cid=california$t=document-frame.htm$an=JD_Article7$3.0#JD_Article7')
