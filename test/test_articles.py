@@ -775,3 +775,7 @@ def test_article23():
 
 def test_campaign():
     lib.articles(html3)
+
+def test_no_articles():
+    html = fromstring('<html></html>')
+    n.assert_list_equal(lib.articles(html), [])
