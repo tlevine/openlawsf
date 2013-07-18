@@ -39,5 +39,7 @@ def download():
     # Get the list of codes.
     html = get(s, 'http://www.amlegal.com/nxt/gateway.dll/California/sfbuilding/cityandcountyofsanfranciscobuildingindus?f=templates$fn=document-frame.htm$3.0')
     for _, code_url in lib.codes(html):
+        print code_url
         for _, _, article_url in lib.articles(get(s, code_url)):
+            print article_url
             get(s, article_url)
