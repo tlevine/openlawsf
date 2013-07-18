@@ -19,5 +19,5 @@ def sections(html):
         number = tr.xpath('td[position()=1]/p')[0].text_content().strip()
         href = tr.xpath('td[position()=1]/p/a/@href')[0]
         title = tr.xpath('td[position()=2]/p/text()')[0]
-        return (number, title, href)
+        return (number, title, href.split('#')[1])
     return map(_features, trs)
