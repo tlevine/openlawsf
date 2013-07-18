@@ -3,6 +3,9 @@ Open San Francisco's law!
 It's all here.
 http://www.amlegal.com/library/ca/sfrancisco.shtml
 
+The mobile version might be easier.
+http://www.amlegal.com/nxt/gateway.dll/?fn=altmain-nf.htm$f=templates$3.0
+
 It could go into a site like this.
 
 * http://chicagocouncilmatic.org/

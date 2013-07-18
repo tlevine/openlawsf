@@ -43,3 +43,20 @@ def download():
         for _, _, article_url in lib.articles(get(s, code_url)):
             print article_url
             get(s, article_url)
+
+def index():
+    'Build index.json.'
+
+    out = {"sections":[],"titles":[]}
+
+    # Set the cookie.
+    s = session()
+    s.get('http://www.amlegal.com/nxt/gateway.dll?f=templates&fn=default.htm&vid=amlegal:sanfrancisco_ca')
+
+    # Get the list of codes.
+    html = get(s, 'http://www.amlegal.com/nxt/gateway.dll/California/sfbuilding/cityandcountyofsanfranciscobuildingindus?f=templates$fn=document-frame.htm$3.0')
+    for (code_number, (code_name, code_url)) in enumerate(lib.codes(html)):
+        out['titles'].append([code_number, code_name])
+        for code_number, code_, article_url in lib.articles(get(s, code_url)):
+            print article_url
+            get(s, article_url)
