@@ -520,6 +520,12 @@ For further information regarding the official version of any of this Code of Or
 </form>
 
     ''')
-    observed = len(lib.articles(html))
+    html.make_links_absolute('http://www.amlegal.com/nxt/gateway.dll?f=id$id=San%20Francisco%20Business%20and%20Tax%20Regulations%20Code%3Ar%3A2$cid=california$t=document-frame.htm$an=JD_Business$3.0#JD_Business')
+    observed = lib.articles(html)
     expected = 23
-    n.assert_equal(observed, expected)
+    n.assert_equal(len(observed), expected)
+
+    number = '2.'
+    title = 'LICENSE FEES'
+    href = 'http://www.amlegal.com/nxt/gateway.dll?f=id$id=San%20Francisco%20Business%20and%20Tax%20Regulations%20Code%3Ar%3A198$cid=california$t=document-frame.htm$an=JD_Article2$3.0#JD_Article2'
+    n.assert_tuple_equal(observed[1], (number, title, href))
