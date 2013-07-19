@@ -60,3 +60,17 @@ def index():
         for code_number, code_, article_url in lib.articles(get(s, code_url)):
             print article_url
             get(s, article_url)
+
+
+
+# Set cookie.
+s = session()
+s.get('http://www.amlegal.com/nxt/gateway.dll?f=templates&fn=default.htm&vid=amlegal:sanfrancisco_ca')
+
+# Get the list of codes.
+html = get(s, 'http://www.amlegal.com/nxt/gateway.dll/?fn=altmain-nf.htm$f=templates$3.0') # Enter the mobile site
+html = get(s, html.xpath('//*[text()="Table of Contents"]/@href')[0]) # Click to the table of contents
+html = get(s, html.xpath('//table[position()=3]/descendant::a/@href')[0]) # Click on california
+for code_url in html.xpath('//table[position()=4]/descendant::a/@href'):
+    html = get(s, code_url)
+    break
