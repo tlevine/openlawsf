@@ -72,5 +72,8 @@ html = get(s, 'http://www.amlegal.com/nxt/gateway.dll/?fn=altmain-nf.htm$f=templ
 html = get(s, html.xpath('//*[text()="Table of Contents"]/@href')[0]) # Click to the table of contents
 html = get(s, html.xpath('//table[position()=3]/descendant::a/@href')[0]) # Click on california
 for code_url in html.xpath('//table[position()=4]/descendant::a/@href'):
-    html = get(s, code_url)
+    code_html = get(s, code_url)
+    for article_url in code_html.xpath('//table[position()=4]/descendant::a/@href'):
+        article_html = get(s, article_url)
+        break
     break
