@@ -77,3 +77,5 @@ for code_url in html.xpath('//table[position()=4]/descendant::a/@href'):
         article_html = get(s, article_url)
         break
     break
+
+    #  html.xpath('//table[position()=4]/descendant::a[img[@src="http://www.amlegal.com/nxt/gateway.dll?f=images$fn=toc-collapsed.gif$3.0"]]/@href')
